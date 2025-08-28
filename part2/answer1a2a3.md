@@ -4,7 +4,7 @@ Answers to Question 1a, 2a and 3, part 2
 It would be nice to actually memerize this but why when we have the web.  We all can easy google/chatgpt these answers.  Here are PASTED results
 
 ---
-### 1a
+# 1a
 ## 1. Use Minimal and Trusted Base Images
 - What it means: Start your Dockerfiles with small, trusted base images (like alpine or distroless) instead of full OS images (like ubuntu or centos).
 - Why: Smaller images reduce the attack surface, minimize vulnerabilities, and make it easier to patch and scan. Always verify images from trusted sources (Docker Hub official images or internal registries).
@@ -27,7 +27,7 @@ It would be nice to actually memerize this but why when we have the web.  We all
 - Keep Docker and the host OS patched
 
 ---
-### 2a
+# 2a
 ## 1. Role-Based Access Control (RBAC)
 - RBAC allows you to define who (user, group, or service account) can perform what actions (verbs like get, list, create, delete) on which resources (pods, services, secrets, etc.).
 - This helps enforce the principle of least privilege, ensuring workloads and users only get the access they actually need.
@@ -41,7 +41,7 @@ It would be nice to actually memerize this but why when we have the web.  We all
 - Access to secrets is controlled through RBAC, and they can be injected into pods as environment variables or mounted as files, reducing exposure.
 
 ---
-### 3
+# 3
 # Security in IaaS
   - Security in IaaS is governed by the Shared Responsibility Model:
     - Cloud Provider’s responsibility: Securing the underlying infrastructure (data centers, physical servers, virtualization layers, networking, hardware).
@@ -69,6 +69,6 @@ It would be nice to actually memerize this but why when we have the web.  We all
     - If attacker gains cloud account credentials, they can provision new resources, steal data, or mine cryptocurrency.
     - Strong credential management and monitoring for unusual activity is key.
 
-# ✅ Summary:
+### ✅ Summary:
 - IaaS gives businesses flexibility and cost savings, but shifts many security responsibilities to the customer. Cloud providers secure the infrastructure itself, but customers must secure their workloads, data, and configurations. Mismanagement of security in IaaS environments is a leading cause of cloud breaches.
 ---
