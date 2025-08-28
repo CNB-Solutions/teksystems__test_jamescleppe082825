@@ -3,4 +3,4 @@ security breach. The attack vector was an unpatched vulnerability in a web appli
 attackers to gain unauthorized access to the network. 
 
 Assumptions:
-  web application, ASP.NET, running on windows 2022, IIS
+  The above web application is: ASP.NET web pages accessing MySQL database, running on windows 2022, IIS
