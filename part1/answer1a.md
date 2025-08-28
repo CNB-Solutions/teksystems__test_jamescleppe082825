@@ -1,6 +1,4 @@
-Answers to Question 1a part 1
-
-When assessing **attack vectors on an ASP.NET application** running on **Windows Server 2022 with IIS and MySQL**, you need to consider risks at multiple layers: the application, the web server, the database, the OS, and the network. Here’s a structured breakdown:
+Answers to Question 1a, part 1
 
 ---
 
@@ -75,5 +73,3 @@ When assessing **attack vectors on an ASP.NET application** running on **Windows
 * Enable **App Insights / logging / intrusion detection**.
 
 ---
-
-Would you like me to create a **threat matrix (STRIDE-style)** for these attack vectors, so you can map risks to mitigations more systematically?
