@@ -2,9 +2,9 @@ output for test (08/28/2025):
 
 Part 1:
   1. Threat Intelligence Report (10 points): 
-    o List the types of attack that could be use. 
-    o Explain how a vulnerability exploited can provide access to the network. 
-    o Suggest preventive measures to avoid similar incidents in the future. 
+    -a. List the types of attack that could be use. 
+    -b. Explain how a vulnerability exploited can provide access to the network. 
+    -c. Suggest preventive measures to avoid similar incidents in the future. 
   2. Incident Response Plan (10 points): 
     o Outline an incident response plan to address the breach. 
     o Include steps for containment, eradication, and recovery. 
