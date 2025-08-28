@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: security-context-demo
+spec:
+  # Pod-level security context (applies to all containers in the pod unless overridden)
+  securityContext:
+    runAsUser: 1000          # UID to run processes as
+    runAsGroup: 3000         # GID to run processes as
+    fsGroup: 2000            # Files created will be owned by this group
+  containers:
+  - name: demo-container
+    image: busybox:1.36
+    command: ["sh", "-c", "sleep 3600"]
+    securityContext:
+      allowPrivilegeEscalation: false # prevents process from gaining more privileges
+      readOnlyRootFilesystem: true    # makes root FS read-only
+      capabilities:
+        drop:
+          - ALL
+        add:
+          - NET_ADMIN              # only add specific capabilities if needed
