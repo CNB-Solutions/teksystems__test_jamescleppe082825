@@ -9,7 +9,7 @@ Answers to Question 3b, part 3
   - JavaScript/TypeScript → eslint, prettier
   - Go → golint, go vet
 - Create a GitHub Actions job:
-  - see answer3b_actionjob.yaml
+  - see answer3b.yaml
 
 ## 2. Testing
 - Automated tests ensure your code works as expected.
@@ -19,7 +19,7 @@ Answers to Question 3b, part 3
   - JavaScript → jest, mocha
   - Go → go test ./...
 - Add a test job in your workflow:
-  - see answer3b_testjob.yaml 
+  - see answer3b.yaml 
 - Optionally, include coverage reports and fail on low coverage.
 
 ## 3. Deployment
@@ -30,7 +30,7 @@ Answers to Question 3b, part 3
   - Cloud → AWS Lambda, Azure Functions, Google Cloud Functions
   - Static site → GitHub Pages, Netlify
 - Add a deploy job:
-  - see answer3b_deployjob.yaml
+  - see answer3b.yaml
 
 ---
 ### ✅ Best Practices
