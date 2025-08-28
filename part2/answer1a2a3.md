@@ -1,4 +1,4 @@
-Answers to Question 1a and 2a, part 2
+Answers to Question 1a, 2a and 3, part 2
 
 ---
 It would be nice to actually memerize this but why when we have the web.  We all can easy google/chatgpt these answers.  Here are PASTED results
@@ -39,4 +39,36 @@ It would be nice to actually memerize this but why when we have the web.  We all
 - Kubernetes provides a built-in resource called Secrets to store sensitive data such as passwords, API keys, or certificates.
 - Secrets are base64-encoded (not encrypted by default, but can be encrypted at rest using KMS providers).
 - Access to secrets is controlled through RBAC, and they can be injected into pods as environment variables or mounted as files, reducing exposure.
+
+---
+### 3
+# Security in IaaS
+  - Security in IaaS is governed by the Shared Responsibility Model:
+    - Cloud Provider’s responsibility: Securing the underlying infrastructure (data centers, physical servers, virtualization layers, networking, hardware).
+    - Customer’s responsibility: Securing everything they build on top (operating systems, apps, access controls, data).
+# Security Implications of IaaS
+  - Data Security & Privacy
+    - Customer must encrypt data (in transit & at rest).
+    - Misconfigured storage (e.g., open S3 buckets) can lead to data leaks.
+  - Identity & Access Management (IAM)
+    - Weak or misconfigured access controls can expose resources.
+    - Multi-factor authentication and least-privilege principles are essential.
+  - Network Security
+    - Customers must configure firewalls, virtual private clouds (VPCs), and network segmentation.
+    - Cloud provider secures backbone networking but not custom rules.
+  - VM & OS Security
+    - Customers are responsible for patching operating systems, updating software, and hardening servers.
+    - Unpatched VMs may be exploited.
+  - Compliance & Legal Risks
+    - Customers must ensure regulatory compliance (GDPR, HIPAA, etc.).
+    - Data residency concerns: knowing where data is stored geographically.
+  - Visibility & Monitoring
+    - Customers must enable logging, monitoring, and intrusion detection.
+    - Lack of monitoring can make attacks harder to detect.
+  - Insider & Account Compromise Risks
+    - If attacker gains cloud account credentials, they can provision new resources, steal data, or mine cryptocurrency.
+    - Strong credential management and monitoring for unusual activity is key.
+
+# ✅ Summary:
+- IaaS gives businesses flexibility and cost savings, but shifts many security responsibilities to the customer. Cloud providers secure the infrastructure itself, but customers must secure their workloads, data, and configurations. Mismanagement of security in IaaS environments is a leading cause of cloud breaches.
 ---
