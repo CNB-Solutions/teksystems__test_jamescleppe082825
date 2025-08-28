@@ -1,7 +1,7 @@
 Answers to Question 2ab, part 1
 
 ---
-1. Identification (Detecting an Attack)
+## 1. Identification (Detecting an Attack)
 Indicators of Compromise (IoCs)
 
 Unusual traffic patterns (e.g., SQL injection payloads in query strings).
@@ -22,7 +22,7 @@ Correlate logs from IIS + Windows Security + MySQL.
 
 ---
 
-2. Containment (Stop the Spread)
+## 2. Containment (Stop the Spread)
 Short-term
 
 Disable compromised accounts immediately (Windows + MySQL).
@@ -41,7 +41,7 @@ Force password resets for all privileged accounts.
 
 ---
 
-3. Eradication (Remove the Threat)
+## 3. Eradication (Remove the Threat)
 System Review
 
 Scan for web shells or modified .aspx/.dll files.
@@ -66,7 +66,7 @@ Enable web.config hardening (custom errors, request validation, HTTPS only).
 
 ---
 
-4. Recovery (Restore Operations)
+## 4. Recovery (Restore Operations)
 Restore application files and databases from a verified clean backup if compromise is deep.
 
 Test the application in a staging environment before re-exposing to production.
@@ -77,7 +77,7 @@ Perform post-recovery penetration testing or vulnerability scanning.
 
 ---
 
-5. Lessons Learned (Post-Incident)
+## 5. Lessons Learned (Post-Incident)
 Document:
 
 Timeline of attack detection, containment, and recovery.
@@ -96,7 +96,7 @@ Train staff on updated procedures.
 
 ---
 
-🔒 Special ASP.NET + IIS + MySQL Hardening Tips
+## 🔒 Special ASP.NET + IIS + MySQL Hardening Tips
 ASP.NET
 
 Use parameterized queries or ORMs (Entity Framework, Dapper).
