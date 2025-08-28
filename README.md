@@ -1,4 +1,4 @@
-out for test:
+output for test (08/28/2025):
 
 Part 1:
   1. Threat Intelligence Report (10 points): 
