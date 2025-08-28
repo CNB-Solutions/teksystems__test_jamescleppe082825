@@ -1,7 +1,7 @@
-Answers to Question 3a, part 1
+Answers to Question 3ab, part 1
 
 ---
-## 1. Recommendations
+## 1. System Recommendations
 - Access Controls
   - Enforce least privilege for Windows accounts, IIS app pools, and MySQL users.
   - Require MFA for admin access (RDP, MySQL, etc.).
@@ -17,3 +17,12 @@ Answers to Question 3a, part 1
   - Remove unused IIS modules.
 
 ---
+## 2. Network Recommendations
+- Subnetting
+  - Put web app/servers and MySQL/server on different subnets
+  - Only allow needed ports and ip address/ranges
+- Create application gateway (Azure) in front of web app\server(s)
+  - If possible, only allow needed users access to ip address/ranges
+  - Create WAF policy to limit attack vertors
+- use only SSL and TLS 2.0
+  - for all communication between user-2-web and web-2-mysql
