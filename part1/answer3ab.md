@@ -19,8 +19,8 @@ Answers to Question 3ab, part 1
 ---
 ## 2. Network Recommendations
 - Subnetting
-  - Put web app/servers and MySQL/server on different subnets
-  - Only allow needed ports and ip address/ranges
+  - Put web app/server(s) and MySQL/server(s) on different subnets
+  - Only allow needed ports and ip address/ranges to talk between those subnets
 - Create application gateway (Azure) in front of web app\server(s)
   - If possible, only allow needed users access to ip address/ranges
   - Create WAF policy to limit attack vertors
