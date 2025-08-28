@@ -1,4 +1,4 @@
-Answers to Question 1a, part 1
+Answers to Question 1a and 1b, part 1
 
 ---
 
