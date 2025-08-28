@@ -1,5 +1,4 @@
-
-
+Answers to Question 1c, part 1
 
 ## 🔹 Common Misconfigurations
 
