@@ -9,4 +9,4 @@ Answers to Question 3b, part 3
   - JavaScript/TypeScript → eslint, prettier
   - Go → golint, go vet
 - Create a GitHub Actions job:
-  - see answer3bjob.yaml
+  - see answer3b_actionjob.yaml
